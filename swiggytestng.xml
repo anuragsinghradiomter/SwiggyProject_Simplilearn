@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Swiggy Grid Test Suite" thread-count="1">
+	<test name="Swiggy Add Menu to Cart in TestNG">
+		<parameter name="browserType" value="chrome" />
+		<classes>
+			<class name="SwiggyTestNGSuite.SwiggyTest" />
+		</classes>
+	</test> <!-- Test -->
+		<test name="Swiggy Bill Check in Cucumber">
+		<classes>
+			<class name="SwiggyCucumberStepDefinition.CucumberTestRunner" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

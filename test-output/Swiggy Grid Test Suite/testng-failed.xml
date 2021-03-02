@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Swiggy Grid Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Swiggy Grid Test with Chrome(failed)">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="SwiggyTestNGSuite.SwiggyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="SwiggyHome"/>
+          <include name="SwiggySearch"/>
+          <include name="tearDown"/>
+          <include name="SwiggyRestaurantCheckout"/>
+          <include name="ExtentResultReporter"/>
+          <include name="SwiggyRestaurantMenu"/>
+        </methods>
+      </class> <!-- SwiggyTestNGSuite.SwiggyTest -->
+    </classes>
+  </test> <!-- Swiggy Grid Test with Chrome(failed) -->
+</suite> <!-- Failed suite [Swiggy Grid Test Suite] -->
