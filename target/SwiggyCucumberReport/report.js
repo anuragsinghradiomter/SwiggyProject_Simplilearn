@@ -44,28 +44,28 @@ formatter.match({
   "location": "SwiggyBillCheck.user_has_add_menu_items_into_Swiggy_site()"
 });
 formatter.result({
-  "duration": 84178600,
+  "duration": 91376400,
   "status": "passed"
 });
 formatter.match({
   "location": "SwiggyBillCheck.menu_list_and_price_are_added_into_excelsheets()"
 });
 formatter.result({
-  "duration": 44400,
+  "duration": 11448900,
   "status": "passed"
 });
 formatter.match({
   "location": "SwiggyBillCheck.total_Bill_has_been_generated()"
 });
 formatter.result({
-  "duration": 35599,
+  "duration": 10022500,
   "status": "passed"
 });
 formatter.match({
   "location": "SwiggyBillCheck.i_validate_the_correctness_of_total_bill_value()"
 });
 formatter.result({
-  "duration": 32699,
+  "duration": 10585300,
   "status": "passed"
 });
 });

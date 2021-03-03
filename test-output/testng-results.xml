@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-02T23:55:05 IST" name="Swiggy Grid Test Suite" finished-at="2021-03-02T23:55:58 IST" duration-ms="53292">
+  <suite started-at="2021-03-03T21:52:10 IST" name="Swiggy Grid Test Suite" finished-at="2021-03-03T21:53:04 IST" duration-ms="53900">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@8dbdac1]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@74e52303]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-03-02T23:55:05 IST" name="Swiggy Grid Test with Chrome" finished-at="2021-03-02T23:55:58 IST" duration-ms="53001">
+    <test started-at="2021-03-03T21:52:10 IST" name="Swiggy Add Menu to Cart in TestNG" finished-at="2021-03-03T21:53:03 IST" duration-ms="53557">
       <class name="SwiggyTestNGSuite.SwiggyTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:05 IST" name="setup" finished-at="2021-03-02T23:55:08 IST" duration-ms="3468" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:10 IST" name="setup" finished-at="2021-03-03T21:52:13 IST" duration-ms="3446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,79 +21,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SwiggyHome()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:08 IST" name="SwiggyHome" finished-at="2021-03-02T23:55:22 IST" duration-ms="14177" status="PASS">
+        <test-method signature="SwiggyHome()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:13 IST" name="SwiggyHome" finished-at="2021-03-03T21:52:28 IST" duration-ms="15088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwiggyHome -->
-        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:22 IST" name="ExtentResultReporter" finished-at="2021-03-02T23:55:22 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:28 IST" name="ExtentResultReporter" finished-at="2021-03-03T21:52:28 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SwiggyHome status=SUCCESS method=SwiggyTest.SwiggyHome()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772] output={null}]]]>
+                <![CDATA[[TestResult name=SwiggyHome status=SUCCESS method=SwiggyTest.SwiggyHome()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentResultReporter -->
-        <test-method signature="SwiggySearch()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:22 IST" name="SwiggySearch" finished-at="2021-03-02T23:55:31 IST" depends-on-methods="SwiggyTestNGSuite.SwiggyTest.SwiggyHome" duration-ms="8333" status="PASS">
+        <test-method signature="SwiggySearch()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:28 IST" name="SwiggySearch" finished-at="2021-03-03T21:52:37 IST" depends-on-methods="SwiggyTestNGSuite.SwiggyTest.SwiggyHome" duration-ms="8405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwiggySearch -->
-        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:31 IST" name="ExtentResultReporter" finished-at="2021-03-02T23:55:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:37 IST" name="ExtentResultReporter" finished-at="2021-03-03T21:52:37 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SwiggySearch status=SUCCESS method=SwiggyTest.SwiggySearch()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772] output={null}]]]>
+                <![CDATA[[TestResult name=SwiggySearch status=SUCCESS method=SwiggyTest.SwiggySearch()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentResultReporter -->
-        <test-method signature="SwiggyRestaurantMenu()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:31 IST" name="SwiggyRestaurantMenu" finished-at="2021-03-02T23:55:54 IST" depends-on-methods="SwiggyTestNGSuite.SwiggyTest.SwiggySearch" duration-ms="22690" status="PASS">
+        <test-method signature="SwiggyRestaurantMenu()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:37 IST" name="SwiggyRestaurantMenu" finished-at="2021-03-03T21:52:59 IST" depends-on-methods="SwiggyTestNGSuite.SwiggyTest.SwiggySearch" duration-ms="22241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwiggyRestaurantMenu -->
-        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:54 IST" name="ExtentResultReporter" finished-at="2021-03-02T23:55:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:59 IST" name="ExtentResultReporter" finished-at="2021-03-03T21:52:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SwiggyRestaurantMenu status=SUCCESS method=SwiggyTest.SwiggyRestaurantMenu()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772] output={null}]]]>
+                <![CDATA[[TestResult name=SwiggyRestaurantMenu status=SUCCESS method=SwiggyTest.SwiggyRestaurantMenu()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentResultReporter -->
-        <test-method signature="SwiggyRestaurantCheckout()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:54 IST" name="SwiggyRestaurantCheckout" finished-at="2021-03-02T23:55:58 IST" depends-on-methods="SwiggyTestNGSuite.SwiggyTest.SwiggyRestaurantMenu" duration-ms="4122" status="PASS">
+        <test-method signature="SwiggyRestaurantCheckout()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:52:59 IST" name="SwiggyRestaurantCheckout" finished-at="2021-03-03T21:53:03 IST" depends-on-methods="SwiggyTestNGSuite.SwiggyTest.SwiggyRestaurantMenu" duration-ms="4167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwiggyRestaurantCheckout -->
-        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:58 IST" name="ExtentResultReporter" finished-at="2021-03-02T23:55:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="ExtentResultReporter(org.testng.ITestResult)[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:53:03 IST" name="ExtentResultReporter" finished-at="2021-03-03T21:53:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SwiggyRestaurantCheckout status=SUCCESS method=SwiggyTest.SwiggyRestaurantCheckout()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772] output={null}]]]>
+                <![CDATA[[TestResult name=SwiggyRestaurantCheckout status=SUCCESS method=SwiggyTest.SwiggyRestaurantCheckout()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentResultReporter -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@353d0772]" started-at="2021-03-02T23:55:58 IST" name="tearDown" finished-at="2021-03-02T23:55:58 IST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwiggyTestNGSuite.SwiggyTest@64cd705f]" started-at="2021-03-03T21:53:03 IST" name="tearDown" finished-at="2021-03-03T21:53:03 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SwiggyTestNGSuite.SwiggyTest -->
-    </test> <!-- Swiggy Grid Test with Chrome -->
-    <test started-at="2021-03-02T23:55:58 IST" name="Swiggy Bill Check in Cucumber" finished-at="2021-03-02T23:55:58 IST" duration-ms="271">
+    </test> <!-- Swiggy Add Menu to Cart in TestNG -->
+    <test started-at="2021-03-03T21:53:03 IST" name="Swiggy Bill Check in Cucumber" finished-at="2021-03-03T21:53:04 IST" duration-ms="322">
       <class name="SwiggyCucumberStepDefinition.CucumberTestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@8dbdac1]" started-at="2021-03-02T23:55:58 IST" name="setUpClass" finished-at="2021-03-02T23:55:58 IST" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@74e52303]" started-at="2021-03-03T21:53:03 IST" name="setUpClass" finished-at="2021-03-03T21:53:04 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@8dbdac1]" started-at="2021-03-02T23:55:58 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-02T23:55:58 IST" duration-ms="95" status="PASS">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@74e52303]" started-at="2021-03-03T21:53:04 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-03-03T21:53:04 IST" duration-ms="139" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@8dbdac1]" started-at="2021-03-02T23:55:58 IST" name="tearDownClass" finished-at="2021-03-02T23:55:58 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:SwiggyCucumberStepDefinition.CucumberTestRunner@74e52303]" started-at="2021-03-03T21:53:04 IST" name="tearDownClass" finished-at="2021-03-03T21:53:04 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

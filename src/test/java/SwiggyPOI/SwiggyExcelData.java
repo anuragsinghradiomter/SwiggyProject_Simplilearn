@@ -84,9 +84,7 @@ public class SwiggyExcelData
 			MenuData[3][0] = Menu3.getStringCellValue();
 			XSSFCell Menu3Price = ROW.getCell(6);
 			MenuData[3][1] = formatter.formatCellValue(Menu3Price);
-			
-			System.out.println("Restaurant: " + MenuData[0][0] + " Menu1: " + MenuData[1][0]);
-			
+						
 			this.ExcelRBook.close();
 			return MenuData;
 		}
@@ -147,5 +145,104 @@ public class SwiggyExcelData
 			return false;
 		}
 	}
+	
+	public boolean SwiggyTestStatusWrite(String FilePath, String SheetName, int SheetRow, String TestCaseID ,String TestStatus) throws Exception
+	{   
+		try
+		{
+			FileInputStream InputStream = new FileInputStream(FilePath);
+			this.ExcelWBook = new XSSFWorkbook(InputStream);		
+			this.ExcelWSheet = ExcelWBook.getSheet(SheetName);  			
+			XSSFRow ROW = ExcelWSheet.getRow(SheetRow);
+			
+			XSSFCell TestID = ROW.createCell(0);
+			TestID.setCellValue(TestCaseID);
+			XSSFCell TestOutcome = ROW.createCell(1);
+			TestOutcome.setCellValue(TestStatus);
+						
+			FileOutputStream outputStream = new FileOutputStream(FilePath);
+			this.ExcelWBook.write(outputStream);
+			this.ExcelWBook.close();
 
+			return true;
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("Could not read/write the Excel sheet");
+			e.printStackTrace();
+			return false;
+		}
+		catch (IOException e)
+		{
+			System.out.println("Could not read/write the Excel sheet");
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public String SwiggyTestStatusRead(String FilePath, String SheetName, int SheetRow) throws Exception
+	{   
+		String TestStatusData;
+		try
+		{
+			FileInputStream InputStream = new FileInputStream(FilePath);
+			this.ExcelRBook = new XSSFWorkbook(InputStream);		
+			this.ExcelRSheet = ExcelRBook.getSheet(SheetName);  
+			
+			XSSFRow ROW = ExcelRSheet.getRow(SheetRow);
+			XSSFCell Status = ROW.getCell(1);
+			TestStatusData = Status.getStringCellValue();
+				
+			this.ExcelRBook.close();
+			return TestStatusData;
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("Could not read the Excel sheet");
+			e.printStackTrace();
+			return null;
+		}
+		catch (IOException e)
+		{
+			System.out.println("Could not read the Excel sheet");
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public int[] SwiggyBillCheck(String FilePath, String SheetName, int SheetRow) throws Exception
+	{   
+		int [] BillDetails = new int[5];
+		try
+		{
+			FileInputStream InputStream = new FileInputStream(FilePath);
+			this.ExcelRBook = new XSSFWorkbook(InputStream);		
+			this.ExcelRSheet = ExcelRBook.getSheet(SheetName);  
+			
+			XSSFRow ROW = ExcelRSheet.getRow(SheetRow);
+			XSSFCell MenuPrice1 = ROW.getCell(1);
+			BillDetails[0] = Integer.parseInt(MenuPrice1.getStringCellValue());
+			
+			XSSFCell MenuPrice2 = ROW.getCell(3);
+			BillDetails[1] = Integer.parseInt(MenuPrice2.getStringCellValue());
+			
+			XSSFCell MenuPrice3 = ROW.getCell(5);
+			BillDetails[2] = Integer.parseInt(MenuPrice3.getStringCellValue());
+									
+			this.ExcelRBook.close();
+			return BillDetails;
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("Could not read the Excel sheet");
+			e.printStackTrace();
+			return null;
+		}
+		catch (IOException e)
+		{
+			System.out.println("Could not read the Excel sheet");
+			e.printStackTrace();
+			return null;
+		}
+	}
 }

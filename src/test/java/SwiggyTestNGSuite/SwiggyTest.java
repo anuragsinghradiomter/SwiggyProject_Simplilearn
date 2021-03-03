@@ -6,6 +6,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import SwiggyPOI.SwiggyExcelData;
 import SwiggyPageAndMethod.SwiggyCheckout;
 import SwiggyPageAndMethod.SwiggyHomePage;
 import SwiggyPageAndMethod.SwiggySearchPage;
@@ -34,6 +36,10 @@ public class SwiggyTest
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extentReport;
 	public ExtentTest extenttest;
+	String FileLocationTestStatus = "C:\\\\Users\\\\ansig\\\\eclipse-workspace\\\\SwiggyProject\\\\SwiggyLiveMenuData.xlsx";
+	String TestStatusSheetName = "TestStatus";
+	int Teststatusrow = 1;
+	SwiggyExcelData TestStatusReadWrite = new SwiggyExcelData();
 
 	@Parameters(value = {"browserType"})
 	@BeforeTest
@@ -83,8 +89,52 @@ public class SwiggyTest
 		extenttest = extentReport.createTest("SwiggyHome");
 		SwiggyHomePage SwiggyHome = new SwiggyHomePage(driver);
 		boolean ActResult1 = SwiggyHome.SwiggyCities();
+		if (ActResult1)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult1);
 		boolean ActResult2 = SwiggyHome.SwiggyCityLocation();
+		if (ActResult2)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult2);
 	}
 
@@ -94,8 +144,52 @@ public class SwiggyTest
 		extenttest = extentReport.createTest("SwiggySearch");
 		SwiggySearchPage SearchSwiggy = new SwiggySearchPage(driver);
 		boolean ActResult1 = SearchSwiggy.SwiggySearch();
+		if (ActResult1)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult1);
 		boolean ActResult2 = SearchSwiggy.SwiggySearchRestaurant();
+		if (ActResult2)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult2);
 	}
 
@@ -105,10 +199,76 @@ public class SwiggyTest
 		extenttest = extentReport.createTest("SwiggyRestaurantMenu");
 		SwiggyRestaurantMenu SwiggyMenu = new SwiggyRestaurantMenu(driver);		
 		boolean ActResult1 = SwiggyMenu.MenuExcelDataRead();
+		if (ActResult1)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult1);
 		boolean ActResult2 = SwiggyMenu.RestaurantMenu();
+		if (ActResult2)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult2);
 		boolean ActResult3 = SwiggyMenu.MenuExcelDataWrite();
+		if (ActResult3)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult3);
 	}
 
@@ -118,8 +278,52 @@ public class SwiggyTest
 		extenttest = extentReport.createTest("SwiggyRestaurantCheckout");
 		SwiggyCheckout MenuCheckout = new SwiggyCheckout(driver);		
 		boolean ActResult1 = MenuCheckout.RestaurantCheckout();
+		if (ActResult1)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult1);
 		boolean ActResult2 = MenuCheckout.CheckoutBillDetails();
+		if (ActResult2)
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "PASS");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			try 
+			{
+				TestStatusReadWrite.SwiggyTestStatusWrite(FileLocationTestStatus, TestStatusSheetName, Teststatusrow, "Overall Test Status", "FAIL");
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
 		Assert.assertEquals(true, ActResult2);
 	}
 

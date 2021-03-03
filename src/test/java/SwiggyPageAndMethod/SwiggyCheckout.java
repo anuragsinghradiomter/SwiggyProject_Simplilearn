@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 public class SwiggyCheckout 
 {
 	WebDriver  driver;
+	public static int MenuBillTotal;
 	public SwiggyCheckout(WebDriver driver) 
 	{
 		this.driver=driver;
@@ -39,8 +40,8 @@ public class SwiggyCheckout
 		{
 			Thread.sleep(2000);
 			List <WebElement> BillDetails = driver.findElements(By.cssSelector("span.ZH2UW"));
-			String BillTotal = BillDetails.get(0).getText();
-			System.out.println("Item Total: " + BillTotal);
+			MenuBillTotal = Integer.parseInt(BillDetails.get(0).getText());
+			System.out.println("Item Total: " + MenuBillTotal);
 			return true;
 		}
 		catch(NoSuchElementException e)
